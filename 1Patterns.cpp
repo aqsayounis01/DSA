@@ -123,17 +123,19 @@ int cnt=1;
 
 
     //Butterfly pattern
-int mn=0;
+int mn=1;
     for (int  i = 1; i <=r*2; i++)
     {
         for (int  j = 1; j<=r*2; j++)
         {
             if (i>r+1)   
             { 
-                mn++;
-                if (j<=r -mn || j> (r*2)-mn  )
+            
+                
+                if (j<=r -mn || j> r+mn  )
                 {
                     cout<<"* ";
+                  
                 }
                 else{
                     cout<<"  ";
@@ -157,6 +159,13 @@ int mn=0;
             }
              
         }
+
+
+        if (i>r+1)
+        {
+            mn++;
+        }
+        
         cout<<endl;
     }
     
