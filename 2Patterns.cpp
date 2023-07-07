@@ -1,4 +1,5 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
 
 int main()
@@ -51,7 +52,22 @@ bool val2=true;
     cout<<"\n\n";
 
 
+//rhombus pattern
+int w=r+1;
+for (int  i = 1; i <= r; i++)
+{
+    cout<<setw(w);
+    for (int  j = 1; j<= c; j++)
+    {
+        cout<<"* ";
+    }
+    w--;
+    cout<<endl;
+}
+cout<<"\n\n";
 
-    
+//triangle no pattern
+
+
 
 }
