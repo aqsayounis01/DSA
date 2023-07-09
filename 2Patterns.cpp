@@ -100,6 +100,61 @@ for (int  i = 1; i <=r; i++)
     w--;
     cout<<endl;
 }
+cout<<"\n\n";
+
+
+
+//diamond pattern
+w=r;
+for (int  i = 1; i <= r ; i++)
+{
+    cout<<setw(w);
+    for (int  j = 1; j<=i; j++)
+    {
+        cout<<"*";
+    }
+
+    for (int k=1; k < i; k++)
+    {
+        cout<<"*";
+    }
+cout<<endl; 
+  
+w--;
+
+}
+int t=r;
+w=1;
+for (int i = 1; i <=r; i++)
+{
+    cout<<setw(w);
+    for (int  j=t;j>=1; j--)
+    {
+        cout<<"*";
+    }
+    for (int  k= 1; k < t; k++)
+    {
+        cout<<"*";
+    }
+    
+    cout<<endl;
+    t--;
+    w++;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
