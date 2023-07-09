@@ -67,6 +67,18 @@ for (int  i = 1; i <= r; i++)
 cout<<"\n\n";
 
 //triangle no pattern
+w=r+1;
+for (int  i = 1; i <= r; i++)
+{
+    cout<<setw(w);
+    for (int  j = 1 ;j<=i; j++)
+    {
+        cout<<j<<" ";
+        
+    }
+    cout<<endl;
+    w--;
+}
 
 
 
