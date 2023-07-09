@@ -79,6 +79,27 @@ for (int  i = 1; i <= r; i++)
     cout<<endl;
     w--;
 }
+cout<<"\n\n";
+
+// palindromic triangle 
+w=r+1;
+for (int  i = 1; i <=r; i++)
+{
+    int k=(i*2)-1;
+    
+    cout<<setw(w);
+    for (int  j=i; j >1; j--)
+    {
+        cout<<j;
+    }
+    for (int k = 1;k<=i; k++)
+    {
+        cout<<k;
+    }
+    
+    w--;
+    cout<<endl;
+}
 
 
 
