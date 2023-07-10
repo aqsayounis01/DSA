@@ -142,6 +142,29 @@ for (int i = 1; i <=r; i++)
     w++;
 
 }
+cout<<"\n\n";
+
+
+//zigzag pattern
+
+for (int  i = 1; i <=3; i++)
+{
+
+    for (int  j = 1; j<=r; j++)
+    {
+        if ( ( (i+j)%4==0 ) || ( (i==2) &&(j%2==0) ) )
+        {
+            cout<<"* ";
+        }
+        else{
+            cout<<"  ";
+        }
+    }
+cout<<"\n";
+w--;
+    
+}
+
 
 
 
