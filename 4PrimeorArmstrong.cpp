@@ -10,6 +10,8 @@ int main()
     cout<<"enter the no you want to check";
     cin>>n;
     int chk=0;
+
+    //prime
     for (int  i = 2; i <=n/2; i++)
     {
         if(n%i ==0)
@@ -29,7 +31,32 @@ int main()
         cout<<"no is not prime \n";
     }
     
+    cout<<"\n\n";
+
+
+    //armstrong - number that is equal to the sum of cubes of its digits.
+    int dr,rr,cr,sr,temp=n;
+    for (int  i = temp; i >=0 ; i--)
+    {
+        dr=temp/10;
+        rr=temp%10;  //last digit 
+        cr=rr*rr*rr;
+        sr += cr;
+        temp=dr;        //repeat theprocess on these left out digits
+    }
+    cout<<"sum of cube of digits = "<<sr<<endl;
+    if (sr==n)
+    {
+cout<<"yes it is armstrong no\n";
+    }
+    else
+    {
+        cout<<"no it is not a armstrong number"<<endl;
+    }
     
+    
+
+
 
 
 
