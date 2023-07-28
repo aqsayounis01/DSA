@@ -35,14 +35,15 @@ int main()
 
 
     //armstrong - number that is equal to the sum of cubes of its digits.
-    int dr,rr,cr,sr,temp=n;
+    int dr,rr,cr,sr=0,temp=n;
     for (int  i = temp; i >=0 ; i--)
     {
+        
         dr=temp/10;
         rr=temp%10;  //last digit 
         cr=rr*rr*rr;
         sr += cr;
-        temp=dr;        //repeat theprocess on these left out digits
+        temp=dr;        //repeat the process on these left out digits
     }
     cout<<"sum of cube of digits = "<<sr<<endl;
     if (sr==n)
@@ -55,6 +56,30 @@ cout<<"yes it is armstrong no\n";
     }
     
     
+//PERFECT NUMBER - a number that is equal to the sum of its proper divisors
+
+int dis=0;
+for (int  i = 1; i < n; i++)
+{
+    if(n==0)
+    {
+        cout<<"this is not  a perfect no";
+    }
+    if (n%i==0)
+    {
+        dis += i;
+
+    }
+    
+}
+if (dis==n)
+{
+    cout<<"this is a perfect no";
+}
+
+else{
+    cout<<"this is not a perfect number ";
+}
 
 
 
