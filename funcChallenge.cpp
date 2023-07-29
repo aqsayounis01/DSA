@@ -4,7 +4,7 @@
 using namespace std;
 bool pr(int n)
 {
-    for (int  j = 2; j<= n/2; j++)
+    for (int  j = 2; j<= n/2; j++)    // can also be upto sqrt 
     {
         if (n%j==0)
         {
@@ -14,6 +14,25 @@ bool pr(int n)
     }
     
     return true;
+}
+
+int fib(int i)
+{
+    if(i==1)
+    {
+        return 0;
+    }
+    else if (i==2)
+    {
+        return 1;
+    }
+    
+else
+{
+    return fib(i-1)+fib(i-2);
+}
+
+    
 }
 int main()
 
@@ -34,6 +53,17 @@ int main()
         
         
     }
+
+    //challenge 2 - print fibonacci series using recursion
+    int r;
+    cout<<"enter the range of fibonacci series ";
+    cin>>r;
+
+    for (int  i = 1; i <=r; i++)
+    {
+        cout<<fib(i)<<endl;
+    }
+    
     
     return 0;
 }
