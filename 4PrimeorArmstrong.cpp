@@ -37,8 +37,7 @@ int main()
     //armstrong - number that is equal to the sum of cubes of its digits.
     int dr,rr,cr,sr=0,temp=n;
     for (int  i = temp; i >=0 ; i--)
-    {
-        
+    { 
         dr=temp/10;
         rr=temp%10;  //last digit 
         cr=rr*rr*rr;
