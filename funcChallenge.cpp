@@ -61,6 +61,18 @@ int ncr(int n, int r)
     
 }
 
+int pasc(int r)
+{
+    for (int  i = 0; i < r; i++)
+    {
+        for (int  j = 0; j <= i; j++)
+        {
+            cout<<ncr(i,j) <<" ";
+        }
+        cout<<endl;
+    }
+    
+}
 int main()
 
 {
@@ -105,5 +117,21 @@ int main()
     cin>>n3>>r1;
     cout<<ncr(n3,r1)<<endl;
     
+
+
+    //challenge 5 -  pascal triangle (binomial cofficients)
+
+/*  
+    0c0
+    1c0  1c1
+    2c0  2c1  2c2 
+    3c0  3c1  3c2  3c3
+    4c0  4c1  4c2  4c3   4c4
+*/
+    int r2;
+    cout<<"enter the value of rows:";
+    cin>>r2;
+    pasc(r2);
+
     return 0;
 }
