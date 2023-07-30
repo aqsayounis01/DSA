@@ -15,7 +15,16 @@ bool pr(int n)
     
     return true;
 }
-
+int fact(int n)
+{
+    if(n==0)
+    {
+        return 1;
+    }
+    else{
+        return n*fact(n-1);
+    }
+}
 int fib(int i)
 {
     if(i==1)
@@ -34,6 +43,10 @@ else
 
     
 }
+
+
+int ncr
+
 int main()
 
 {
@@ -64,6 +77,19 @@ int main()
         cout<<fib(i)<<endl;
     }
     
+
+    //challenge 3 - factorial of a  no using recursion
+    int f;
+    cout<<"enter a number to find its factorial ";
+    cin>>f;
+    cout<<fact(f)<<endl;
+
+
+    //challenge 4 - find the no of combinations (ncr = n!/(n-r)! * r!)
+    int n1,r1;
+    cout<<"enter the value of n and r ";
+    cin>>n1>>r1;
+    ncr(n1,r1);
     
     return 0;
 }
