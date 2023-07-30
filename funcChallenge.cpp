@@ -45,7 +45,21 @@ else
 }
 
 
-int ncr
+int ncr(int n, int r)
+{
+    int factn=1,factr=1;
+    for (int  i = 1; i <=n; i++)
+    {
+        factn=factn*i;
+    }
+    for (int  i = 1; i <=r; i++)
+    {
+        factr=factr*i;
+    }
+
+    return factn/(fact(n-r)*factr);        //for n-r ! ew are calling the function that we made previously 
+    
+}
 
 int main()
 
@@ -86,10 +100,10 @@ int main()
 
 
     //challenge 4 - find the no of combinations (ncr = n!/(n-r)! * r!)
-    int n1,r1;
+    int n3,r1;
     cout<<"enter the value of n and r ";
-    cin>>n1>>r1;
-    ncr(n1,r1);
+    cin>>n3>>r1;
+    cout<<ncr(n3,r1)<<endl;
     
     return 0;
 }
