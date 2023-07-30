@@ -4,13 +4,14 @@ using namespace std;
 int sumn(int);
 int btod(int n)
 {
-    int d,r,s=0,temp=n;
+    int d,r,s,temp=n;
     // we need to seperate the digits 
     for (int  i = temp,j=0; i >=0; i--,j++)
     {
         d=temp/10;
         r=temp%10;   // this remainder is the last digit
         s += r*pow(2,j);
+        cout<<s<<endl;
         temp=d;
  
     }
