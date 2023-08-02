@@ -1,7 +1,8 @@
 // stoi(string)- converts the string into integer    (or atoi())
 // string.size() -  it returns the no of charactaers in the string 
 // we can do indexing of string just as we do of arrays
-// By subtracting '0'we can convert char into int 
+// By subtracting '0'we can convert CHAR INTO INT
+
 #include<math.h>
 #include<iostream>
 // #include<bits/stdc++.h>
