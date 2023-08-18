@@ -4,7 +4,7 @@ using namespace std;
 int BS (int n,int k,int a[])
 {
     int s=0,e=n;
-    while (s<=e)
+    while (s<=e)    //if s>e ->element is not present in the array
     {
         int mid=(s+e)/2;
         if(k==a[mid])
