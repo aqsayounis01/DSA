@@ -1,3 +1,5 @@
+//linear search
+
 #include<iostream>
 using namespace std;
 
@@ -21,7 +23,7 @@ int main()
     {
         cout<<arr[i]<<" ";
     }
-
+cout<<endl;
     cout<<"enter the element you want:";
     int k;
     cin>>k;
