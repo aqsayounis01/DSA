@@ -1,3 +1,6 @@
+//   temp  1 2 3 4
+//     0
+
 #include<iostream>
 using namespace std;
 
@@ -22,13 +25,13 @@ void insertAtTail(node* &head , int val)   //we have to modify the LL so take he
         head=n;         // first node will be the block of memory we requested 
     }
 
-    node* temp= head ;        // temp pointer will traverse the LL and go to lat   
+    node* temp= head ;        // temp pointer will traverse the LL and go to last   
     while (temp->next!=NULL)    // to reach the last node
     {
         temp=temp->next;
     }
 
-    temp->next=n;          // last node will not point to the new node 
+    temp->next=n;          // last node will now point to the new node 
     n->next=NULL;
 }
 void display(node *head)
