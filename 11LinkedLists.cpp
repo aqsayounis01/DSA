@@ -16,7 +16,7 @@ class node
 };
 void insert(node* &head)
 {
-    for (int  i = 0; i < 5; i++)
+    for (int  i = 0; i < 6; i++)
     {
         node* n= new node(i);
         if (head==NULL)
@@ -44,6 +44,8 @@ void display(node * head)
         cout<<temp->data<<"->";
         temp=temp->next;
     }
+    cout<<"hi";
+    return;
     
 }
 void dele(node* &head)
@@ -53,13 +55,19 @@ void dele(node* &head)
     cin>>n;
     node *temp=head ;
     node * nod;
-    if (n==temp->data)
+    if (n==temp->data)   // to delete the first element 
     {
         head = temp->next;
         nod = temp;
 
 
     }
+    else if (temp->data==n)  // one one element in the LL
+    {   nod=temp;
+        temp=temp->next;
+        
+    }
+    
     else
     {
         while (temp->next->data!=n)    // temp is 1 before data
@@ -68,11 +76,13 @@ void dele(node* &head)
         
     }
     nod = temp->next;   // nod stores the node that is to be deletes 
-    temp->next=nod->next;     // now temp will point to the node after the nod
+    temp->next=nod->next;     // now temp will point to the node after the nod1
+
     }
     
     
     delete nod;
+   
 //   temp  1 2 3 4
     // 0
 }
